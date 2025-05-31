@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ConfRankPlus"
+version = "2025.05"
+description = "Model Architecture that is used for ConfrankPlus"
+authors = [
+    { name = "Rick Oerder", email = "rick.benedikt.oerder@scai.fraunhofer.de" },
+    { name = "Christian H{\"o}lzer", email = "hoelzer@thch.uni-bonn.de" },
+    { name = "Jan Hamaekers", email = "jan.hamaekers@scai.fraunhofer.de" },
+]
+maintainers = [
+    { name = "Rick Oerder", email = "rick.benedikt.oerder@scai.fraunhofer.de" },
+    { name = "Christian H{\"o}lzer", email = "hoelzer@thch.uni-bonn.de" },
+]
+dependencies = [
+    "ase",
+    "h5py",
+    "torch>=2.1.0",
+    "torch_geometric>=2.5.3",
+    "tad-multicharge>=0.3.1",
+]
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+confrankplus = "ConfRankPlus.scripts.eval:main"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''

@@ -1,0 +1,3 @@
+include src/ConfRankPlus/parameters/gfn1-xtb.json
+include src/ConfRankPlus/parameters/gfn2-xtb.json
+include src/ConfRankPlus/inference/pretrained/2025_05_confrankplus.pt
