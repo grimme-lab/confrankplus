@@ -1,12 +1,16 @@
+<h1 align="center"><img src="./assets/logo.png" alt="ConfRank+" width="300"></h3>
+
+<h3 align="center">ConfRank+: Extending Conformer Ranking to Charged Molecules</h3>
+<p align="center"> A High-Throughput Machine Learning Model for Charged Molecular Conformers </p>
+
+
 # Installation
 
-You can install the python code of the ConfRankPlus model architecture via
+You can install the python code for running the ConfRankPlus model via pip:
 
 ```bash
-pip3 install . 
+pip3 install git+https://github.com/grimme-lab/confrankplus.git
 ```
-
-after cloning this repo.
 
 It is **highly recommended** to install `torch_cluster` for significant faster computation of atomistic graphs, e.g., by
 running:
@@ -22,7 +26,7 @@ For further installation guidelines, see [here](https://github.com/rusty1s/pytor
 ## Label xyz files from command line
 
 You can label (multiple) xyz files (or other formats supported by the `ase.io` module) with the `confrankplus` command
-in you command line:
+in your command line:
 
 ```bash
  confrankplus --files *.xyz --output_path confrank_output.xyz --total_charge 0  --fidelity r2SCAN-3c --batch_size 20
@@ -78,4 +82,4 @@ filepath = ...  # path to .h5 file
 dataset = HDF5Dataset.from_hdf5(filepath=filepath, precision=64)
 ```
 
-The result will be an `InMemoryDataset` from PyTorch Geometric. 
+`dataset` will be an instance of the `InMemoryDataset` class from PyTorch Geometric. 
