@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./assets/logo.png" alt="ConfRank+" width="300"></h3>
+<h1 align="center"><img src="./assets/logo.png" alt="ConfRank+" width="400"></h3>
 
 <h3 align="center">ConfRank+: Extending Conformer Ranking to Charged Molecules</h3>
 <p align="center"> A High-Throughput Machine Learning Model for Charged Molecular Conformers </p>
