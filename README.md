@@ -3,6 +3,11 @@
 <h3 align="center">ConfRank+: Extending Conformer Ranking to Charged Molecules</h3>
 <p align="center"> A High-Throughput Machine Learning Model for Charged Molecular Conformers </p>
 
+<p align="center">
+  <strong><a href="https://doi.org/10.26434/chemrxiv-2025-xkwk6">Preprint</a></strong> | 
+  <strong><a href="https://zenodo.org/records/15465665">Dataset</a></strong> | 
+  <strong><a href="https://doi.org/10.1021/acs.jcim.4c01524">ConfRank 1.0</a></strong>
+</p>
 
 # Installation
 
